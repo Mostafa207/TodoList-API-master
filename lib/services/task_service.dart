@@ -6,13 +6,13 @@ class TaskService {
   static Map postData = {
     'todo': '',
     'completed': false,
-    'userId': 13
+    'userId': 14
   }; //data of task
 
   // function to get data
   static Future<TaskModel> getData() async {
     Response response =
-        await dio.get('https://dummyjson.com/todos/user/13'); // call get  API
+        await dio.get('https://dummyjson.com/todos/user/14'); // call get  API
     return TaskModel.fromJson(response.data); // convert data to model
   }
 
